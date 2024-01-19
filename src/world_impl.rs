@@ -9,7 +9,7 @@ pub struct WorldImpl<T:Terrain, WT:WorldOnTurn> {
 }
 
 impl<WT:WorldOnTurn> WorldImpl<TerrainImpl, WT: WorldOnTurn> {
-    pub fn new_simple(width: Int, height: Int,  dungeon_master: Option<DungeonMaster>,  world_on_turn: Option<WT>) -> Self {
+    pub fn simple_new(width: Int, height: Int,  dungeon_master: Option<DungeonMaster>,  world_on_turn: Option<WT>) -> Self {
         Self::new(
             TerrainImpl::new(width, height, TerrainMapper::new()), 
             dungeon_master, 

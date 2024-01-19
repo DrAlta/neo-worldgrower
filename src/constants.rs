@@ -1,0 +1,35 @@
+use crate::Int;
+use crate::rustations::{PropertyKey, StringPropertyKey, IntPropertyKey, PricesPropertyKey, DemandsPropertyKey, BuildingListPropertyKey};
+use crate::attribute::building_list::BuildingList;
+use crate::attribute::demands::Demands;
+use crate::attribute::prices::Prices;
+
+
+const NAME: PropertyKey<StringPropertyKey, String> = StringPropertyKey::Name;
+const LEVEL: PropertyKey<IntPropertyKey, Int> = IntPropertyKey::Level;
+const STRENGTH: PropertyKey<IntPropertyKey, Int> = IntPropertyKey::Strength;
+const CONSTITUTION: PropertyKey<IntPropertyKey, Int> = IntPropertyKey::Constitution;
+const DEXTERITY: PropertyKey<IntPropertyKey, Int> = IntPropertyKey::Dexterity;
+const INTELLIGENCE: PropertyKey<IntPropertyKey, Int> = IntPropertyKey::Intelligence;
+const WISDOM: PropertyKey<IntPropertyKey, Int> = IntPropertyKey::Wisdom;
+const CHARISMA: PropertyKey<IntPropertyKey, Int> = IntPropertyKey::Charisma;
+const PRICES: PropertyKey<PricesPropertyKey, Prices> = PricesPropertyKey::Prices;
+const DEMANDS: PropertyKey<DemandsPropertyKey, Demands> = DemandsPropertyKey::Demands;
+const BUILDINGS: PropertyKey<BuildingListPropertyKey, BuildingList> = BuildingListPropertyKey::Buildings;
+const ARMOR: PropertyKey = PropertyKey::ARMOR;
+const HIT_POINTS: PropertyKey = PropertyKey::HitPoints;
+const DAMAGE_RESIST: PropertyKey = PropertyKey::DamageResist;
+const DAMAGE: PropertyKey = PropertyKey::DAMAGE;
+const CONDITIONS: PropertyKey = PropertyKey::CONDITIONS;
+const X: PropertyKey = PropertyKey::X;
+const Y: PropertyKey = PropertyKey::Y;
+const WIDTH: PropertyKey = PropertyKey::WIDTH;
+const HEIGHT: PropertyKey = PropertyKey::HEIGHT;
+const FOOD: PropertyKey = PropertyKey::FOOD;
+const WATER: PropertyKey = PropertyKey::WATER;
+const ENERGY: PropertyKey = PropertyKey::ENERGY;
+const SOCIAL: PropertyKey = PropertyKey::SOCIAL;
+const ALCOHOL_LEVEL: PropertyKey = PropertyKey::AlcoholLevel;
+const GOLD: PropertyKey = PropertyKey::GOLD;
+const CREATURE_TYPE: PropertyKey = PropertyKey::CreatureType;
+const GROUP: PropertyKey = PropertyKey::GROUP;
