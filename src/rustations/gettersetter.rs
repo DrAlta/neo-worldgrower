@@ -17,3 +17,14 @@ impl<PK: PartialEq + std::hash::Hash, T> std::hash::Hash for PropertyKey<PK, T> 
         self.id.hash(state);
     }
 }
+
+impl<PK, T> From<PropertyKey<PK, T>> for PK {
+    fn from(value: PropertyKey<PK, T>) -> Self {
+        value.id
+    }
+}
+impl<PK, T> From<&PropertyKey<PK, T>> for &PK {
+    fn from(value: PropertyKey<PK, T>) -> Self {
+        &value.id
+    }
+}

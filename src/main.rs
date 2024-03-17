@@ -5,7 +5,9 @@ mod rustations;
 // end finished mods
 // start placeholder mods
 mod attribute;
+mod condition;
 mod constants;
+mod creaturetype;
 mod world;
 mod world_impl;
 mod world_object;
@@ -21,14 +23,14 @@ fn main() {
 }
 
 mod foo {
-
+/*
     use crate::world::World;
     use crate::world_impl::WorldImpl;
     use crate::world_object::WorldObject;
     use crate::terrain::Terrain;
     use crate::terrain_impl::TerrainImpl;
     use crate::test_utils;
-/*
+
     fn create_performer() -> WorldObject{
         let performer = test_utils.simple_create_skilled_world_object(1, constants.PERSONALITY, Personality::new())
         performer.set_property(constants.X, 0);
