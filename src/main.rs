@@ -1,3 +1,4 @@
+/*
 type Int = i32;
 type WorldObjectID = usize;
 // start finished mods
@@ -16,10 +17,11 @@ mod terrain_impl;
 mod test_utils;
 // end placeholder mods
 
-
+*/
+mod const_parser;
 fn main() {
     //foo::food_goal_test();
-    println!("Hello, world!");
+    println!("Hello, world!{:?}", const_parser::parse_int_property("bob"));
 }
 
 mod foo {
